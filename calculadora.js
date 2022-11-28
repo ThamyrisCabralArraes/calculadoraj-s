@@ -6,9 +6,9 @@ let peso = document.getElementById('peso');
 
 let altura = document.getElementById('altura');
 
-let bottumOn = document.getElementById('boxBtnEnviar');
+let buttonOn = document.getElementById('boxBtnEnviar');
 
-let bottumOff = document.getElementById('boxBtnLimpar');
+let buttonOff = document.getElementById('boxBtnLimpar');
 
 let imc = document.getElementById('imc');
 
@@ -16,7 +16,7 @@ let aviso = document.getElementById('aviso');
 
 let pessoa = document.getElementsByClassName('pessoa');
 
-bottumOn.addEventListener('click', function (event) {
+buttonOn.addEventListener('click', function (event) {
   let nameR = name2.value;
   let ageR = age.value;
   let pesoR = peso.value;
@@ -59,4 +59,4 @@ function reset() {
   aviso.textContent = '';
   pessoa[0].textContent = '';
 }
-bottumOff.addEventListener('click', reset);
+buttonOff.addEventListener('click', reset);
