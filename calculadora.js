@@ -15,3 +15,12 @@ let imc = document.getElementById('imc');
 let aviso = document.getElementById('aviso');
 
 let pessoa = document.getElementsByClassName('pessoa');
+
+bottumOn.addEventListener('click', function (event) {
+  let nameR = name2.value;
+  let ageR = age.value;
+  let pesoR = peso.value;
+  let alturaR = altura.value;
+  let imcR = (pesoR / (alturaR * alturaR)).toFixed(1);
+
+  imc.value = imcR;
