@@ -41,3 +41,12 @@ bottumOn.addEventListener('click', function (event) {
     }
     return sit;
   }
+
+  let pessoaR = {
+    name: nameR,
+    age: ageR,
+    peso: pesoR,
+    altura: alturaR,
+    imcR: imcR,
+  };
+
