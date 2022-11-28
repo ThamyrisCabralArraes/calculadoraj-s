@@ -24,3 +24,20 @@ bottumOn.addEventListener('click', function (event) {
   let imcR = (pesoR / (alturaR * alturaR)).toFixed(1);
 
   imc.value = imcR;
+
+  let avisoR = situacao(imcR);
+  aviso.textContent = avisoR;
+
+  function situacao() {
+    let sit = '';
+    if (imcR < 18) {
+      sit = `Magreza`;
+    } else if (imcR > 18.1 && imcR < 24) {
+      sit = `Normal`;
+    } else if (imcR > 24.1 && imcR < 30) {
+      sit = `Sobrepeso`;
+    } else {
+      sit = `Obesidade`;
+    }
+    return sit;
+  }
