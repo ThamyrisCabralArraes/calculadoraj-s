@@ -54,3 +54,9 @@ bottumOn.addEventListener('click', function (event) {
 
   event.preventDefault();
 });
+
+function reset() {
+  aviso.textContent = '';
+  pessoa[0].textContent = '';
+}
+bottumOff.addEventListener('click', reset);
