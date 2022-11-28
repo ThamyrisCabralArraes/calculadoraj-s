@@ -50,3 +50,7 @@ bottumOn.addEventListener('click', function (event) {
     imcR: imcR,
   };
 
+  pessoa[0].textContent = `${pessoaR.name} tem a idade de ${pessoaR.age}, o peso ${pessoaR.age}, a altura ${pessoaR.altura} e o IMC: ${pessoaR.imcR}`;
+
+  event.preventDefault();
+});
